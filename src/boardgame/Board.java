@@ -1,5 +1,7 @@
 package boardgame;
 
+import chess.ChessPiece;
+
 public class Board {
     private int rows;
     private int columns;
@@ -66,5 +68,8 @@ public class Board {
             throw new BoardException("Position not on the board");
         }
         return piece(position) != null;
+    }
+
+    public void placePiece(ChessPiece newPiece, Position pos) {
     }
 }
